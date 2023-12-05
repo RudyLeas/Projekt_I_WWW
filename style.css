@@ -33,7 +33,6 @@ header h2 {
 }
 
 .content-container {
-    aign-items: center;
     display: flex;
     flex: 1;
 }
