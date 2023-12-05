@@ -1,0 +1,150 @@
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #EBE3D5;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    margin: 2vh;
+    padding: 2vh;
+    border: none; /* Ukrycie obramowania */
+}
+
+.header h1 {
+    font-size: 6em;
+    text-align: left;
+    margin: 1vh 0;
+}
+header h2 {
+
+    font-size: 2em;
+    text-align: left;
+    margin: 1vh 0;
+}
+
+.content-container {
+    display: flex;
+    flex: 1;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    width : 25%;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.nav-item {
+    margin-bottom: 2vh;
+    border: 1px solid #ccc; /* Dodajemy ramkę do każdego elementu menu */
+    padding: 3vh; /* Dodajemy wewnętrzny odstęp dla lepszego wyglądu */
+    background-color: #B0A695;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer; /* Dodajemy kursor wskazujący na to, że element jest interaktywny */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav-item a {
+    color: inherit; /* Dziedziczenie koloru tekstu od rodzica (.nav-item) */
+    text-decoration: none; /* Usunięcie domyślnego podkreślenia dla linku */
+    display: flex; /* Ustawienie linku jako blokowy, aby wypełnił całą przestrzeń .nav-item */
+}
+.nav-item:hover {
+    background-color: #EBE3D5; /* Kolor tła po najechaniu */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Dodajemy efekt cienia po najechaniu */
+}
+
+.main-content {
+    flex: 1;
+    margin: 1vh;
+    padding: 1vh;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color:#EBE3D5;
+    text-align: left;
+    font-size: 1.5em;
+    overflow: auto;
+
+
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+.main-content h2 {
+    text-align: center;
+    margin: 1vh 0;
+}
+
+.main-content img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    width: auto;
+
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #B0A695;
+    font-size: 0.5em;
+}
+td{
+    background-color: #EBE3D5;
+    font-size: 0.5em;
+}
+.main-content iframe {
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+
+
+}
+
+.footer {
+    margin: 2vh;
+    padding: 1vh;
+    border: none; /* Ukrycie obramowania */
+    text-align: center;
+    background-color: #B0A695;
+}
