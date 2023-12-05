@@ -17,7 +17,7 @@ body {
 .header {
     margin: 2vh;
     padding: 2vh;
-    border: none; /* Ukrycie obramowania */
+    border: none;
 }
 
 .header h1 {
@@ -33,6 +33,7 @@ header h2 {
 }
 
 .content-container {
+    aign-items: center;
     display: flex;
     flex: 1;
 }
@@ -53,27 +54,27 @@ header h2 {
 
 .nav-item {
     margin-bottom: 2vh;
-    border: 1px solid #ccc; /* Dodajemy ramkę do każdego elementu menu */
-    padding: 3vh; /* Dodajemy wewnętrzny odstęp dla lepszego wyglądu */
+    border: 1px solid #ccc;
+    padding: 3vh;
     background-color: #B0A695;
     border-radius: 10px;
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s, box-shadow 0.3s;
-    cursor: pointer; /* Dodajemy kursor wskazujący na to, że element jest interaktywny */
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 .nav-item a {
-    color: inherit; /* Dziedziczenie koloru tekstu od rodzica (.nav-item) */
-    text-decoration: none; /* Usunięcie domyślnego podkreślenia dla linku */
-    display: flex; /* Ustawienie linku jako blokowy, aby wypełnił całą przestrzeń .nav-item */
+    color: inherit;
+    text-decoration: none;
+    display: flex;
 }
 .nav-item:hover {
-    background-color: #EBE3D5; /* Kolor tła po najechaniu */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Dodajemy efekt cienia po najechaniu */
+    background-color: #EBE3D5;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .main-content {
@@ -114,7 +115,8 @@ table {
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
-    width: auto;
+    width: 50%;
+
 
 }
 
@@ -126,11 +128,11 @@ th, td {
 
 th {
     background-color: #B0A695;
-    font-size: 0.5em;
+    font-size: 0.7em;
 }
 td{
     background-color: #EBE3D5;
-    font-size: 0.5em;
+    font-size: 0.7em;
 }
 .main-content iframe {
     border-radius: 10px;
@@ -144,7 +146,7 @@ td{
 .footer {
     margin: 2vh;
     padding: 1vh;
-    border: none; /* Ukrycie obramowania */
+    border: none;
     text-align: center;
     background-color: #B0A695;
 }
